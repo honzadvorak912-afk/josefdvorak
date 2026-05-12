@@ -61,7 +61,7 @@
     "closes": "17:00"
   },
   "sameAs": [
-    "https://www.facebook.com/projekcnikancelar.chrudim"
+    "https://www.facebook.com/projekcnikanclarchrudim"
   ]
 }
 </script>
@@ -510,21 +510,26 @@ footer span{color:rgba(255,255,255,.2)}
     <h2 class="section-title">Odborná <em>způsobilost</em></h2>
     <div class="divider"></div>
     <div class="cred-grid">
-      <div class="cred-card">
-        <span class="cred-icon">📋</span>
+      <div class="cred-card" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='aaa.jpg'" style="cursor:zoom-in">
+        <img src="aaa.jpg" alt="Živnostenský list – Ing. Josef Dvořák" style="width:100%;border-radius:2px;margin-bottom:1rem;box-shadow:0 2px 12px rgba(0,0,0,.1)">
         <h4>Živnostenský list</h4>
-        <p>Oprávnění k výkonu projektové činnosti ve výstavbě vydané Magistrátem města Chrudim.</p>
+        <p>Projektová činnost ve výstavbě · MěÚ Chrudim · od 1. 1. 2008</p>
       </div>
-      <div class="cred-card">
-        <span class="cred-icon">🏛</span>
-        <h4>ČKAIT – Autorizace</h4>
-        <p>Osvědčení o autorizaci vydané Českou komorou autorizovaných inženýrů a techniků činných ve výstavbě. Autorizovaný inženýr pro pozemní stavby.</p>
+      <div class="cred-card" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='aa.jpg'" style="cursor:zoom-in">
+        <img src="aa.jpg" alt="ČKAIT Zelená úsporám" style="width:100%;border-radius:2px;margin-bottom:1rem;box-shadow:0 2px 12px rgba(0,0,0,.1)">
+        <h4>Zelená úsporám – ČKAIT</h4>
+        <p>Osvědčení č. 07023 · ČKAIT Pardubice · 8. 6. 2010</p>
       </div>
-      <div class="cred-card">
-        <span class="cred-icon">🌿</span>
-        <h4>Zelená úsporám</h4>
-        <p>Certifikát absolvování kontrolního semináře k programu Zelená úsporám. Oblastní kancelář ČKAIT Pardubice.</p>
+      <div class="cred-card" onclick="document.getElementById('lb').style.display='flex';document.getElementById('lb-img').src='a.jpg'" style="cursor:zoom-in">
+        <img src="a.jpg" alt="Osvědčení o autorizaci ČKAIT" style="width:100%;border-radius:2px;margin-bottom:1rem;box-shadow:0 2px 12px rgba(0,0,0,.1)">
+        <h4>Osvědčení o autorizaci</h4>
+        <p>Autorizovaný inženýr pro pozemní stavby · č. 0701208 · od 4. 12. 2007</p>
       </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lb" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:300;align-items:center;justify-content:center;cursor:zoom-out">
+      <img id="lb-img" src="" alt="Certifikát" style="max-width:90vw;max-height:90vh;border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,.5)">
     </div>
     <p style="margin-top:2rem;font-size:.8rem;color:var(--ink3)">IČO: 736 54 051 · Zapsán u živnostenského úřadu MěÚ Chrudim Ev.č. 360304-19378</p>
   </div>
@@ -569,7 +574,7 @@ footer span{color:rgba(255,255,255,.2)}
           <div id="form-error" style="display:none;background:#fdf0f0;border:1px solid #e8b8b8;border-radius:2px;padding:1rem 1.25rem;font-size:.88rem;color:#8b2a2a;margin-top:.5rem">
             Nepodařilo se odeslat. Prosím kontaktujte nás přímo na dvorak@projektant-chrudim.cz
           </div>
-          <p style="font-size:.75rem;color:var(--ink3);margin-top:.5rem">Nebo nás najdete také na Facebooku: <a href="#" style="color:var(--gold)">Projekční kancelář Chrudim</a></p>
+          <p style="font-size:.75rem;color:var(--ink3);margin-top:.5rem">Nebo nás najdete také na Facebooku: <a href="https://www.facebook.com/projekcnikanclarchrudim" target="_blank" style="color:var(--gold)">Projekční kancelář Chrudim</a></p>
         </form>
       </div>
     </div>
